@@ -3,7 +3,7 @@
 }
 
 html{
-    font-size: 16px;
+    font-size: 100%;
 }
 
 .title{
@@ -23,14 +23,19 @@ div[class*="col-"]{
 
 .f-row{
     margin-bottom: 3rem;
-    font-size: 50px;
+    font-size: small;
+    
 }
 
 .heading{
     font-family: 'Rampart One', cursive;
-    font-size: 3rem;
     padding: 0.6rem 0.5rem 0 0.5rem ;
     text-align: center;
+    font-size: 1rem;
+}
+
+.heading p{
+    font-size: 3rem;
 }
 
 .logo{
@@ -46,6 +51,7 @@ div[class*="col-"]{
 
 
 nav{
+   
     display: flex;
     justify-content: end;
     
@@ -91,14 +97,20 @@ nav .page-link:hover{
 
 
 @media only screen and (max-width:767px) {
+    .logo img{
+        display: block;
+        margin: 0.5rem auto;
+    }
+
     nav{
         width: 100%;
         display: block;
         text-align: center;
         
     }
-    nav .page-link{
-        width: 100%;
+
+    html{
+        font-size: 14px;
     }
 
     
