@@ -8,7 +8,7 @@ html{
 
 div[class*="col-"]{
     padding: 0;
-    
+
 }
 
 .title{
@@ -20,11 +20,12 @@ div[class*="col-"]{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* TODO: Colocar la perte del diseño y colores a la página */
 
-div[class*="col-"]{
+/* div[class*="col-"]{
     background-color: aquamarine;
     border: 2px solid black;
-}
+} */
 
 .f-row{
     margin-bottom: 3rem;
@@ -48,7 +49,7 @@ div[class*="col-"]{
 }
 
 .logo img{
-    height: 5rem;
+    height: 5.5rem;
     padding: 0.7rem 0.5rem 0 0.5rem ;
 }
 
@@ -97,7 +98,56 @@ nav .page-link:hover{
 
 }
 
+.footer{
+   max-height: 5rem;
+}
+
+.footer i{
+    font-size: 4rem;
+    
+}
+
+.img-footer{
+    height: 14rem;
+    float: right;
+    position: relative;
+
+}
+
+.footer p, .footer a{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+
+}
+
+.footer a{
+    position: relative;
+    top: 2rem;
+}
+.footer p{
+    position: relative;
+    top: 2rem;
+}
+
+
+
+
 @media only screen and (max-width: 575px) {
+    
+    .footer p, .footer a{
+        /* position: absolute; */
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+    
+    }
+
     .logo img{
         display: block;
         margin: 0.5rem auto;
@@ -126,6 +176,7 @@ nav .page-link:hover{
 @media only screen and (min-width:576px) {
 
 
+
     nav{
         width: 100%;
         display: flex;
@@ -133,7 +184,6 @@ nav .page-link:hover{
         flex-direction: row;
         align-items: center;
     }
-
 
     html{
         font-size: 8px;
