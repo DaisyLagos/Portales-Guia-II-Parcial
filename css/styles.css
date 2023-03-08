@@ -6,19 +6,20 @@ html{
     font-size: 16px;
 }   
 
-div[class*="col-"]{
+/* div[class*="col-"]{
     padding: 0;
 
-}
+} */
 
 body{
-    background-image: url(/img/background.jpg);
+    background-image: url(/img/background-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .contenido{
-    background: linear-gradient(rgba(207,213,225,0.5), rgba(207,213,225,0.5), rgba(207,213,225,0.5));
+    background: linear-gradient(rgba(155,158,163,0.5), rgba(155,158,163,0.5));
+    
     width: 100%;
     height: 100%;
 
@@ -31,28 +32,32 @@ body{
     color: #ededf2;
     text-shadow: 4px 4px 3px #172c3c;
     font-size: 4rem;
+    margin-bottom: 4rem;
 }
 
 
 
 .f-row{
-    background-color: #6f737e;
+    background-color: #063940;
     font-size: small;
     
 }
 
 .s-row{
     padding: 4rem;
+    margin: 0;
 }
 
 .heading{
     font-family: 'Rampart One', cursive;
-    padding: 0.6rem 0.5rem 0 0.5rem ;
     text-align: center;
-    
+    height: 100%;
+    width: 100%;
+
 }
 
 .heading p{
+    padding: 1.5rem 0.5rem 0 0.5rem ;
     font-size: 3rem;
     color: #ededf2;
 }
@@ -63,12 +68,14 @@ body{
 }
 
 .logo img{
-    height: 5.5rem;
+    height: 7rem;
     padding: 0.7rem 0.5rem 0 0.5rem ;
+    margin: 1rem 0;
 }
 
 nav{
-    
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: end;
     
@@ -76,9 +83,11 @@ nav{
 
 nav .page-link{
     font-weight: 700;
-    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    align-content: center;
+    padding: 3rem 1.5rem 1rem 1.5rem;
     font-size: 2rem;
     color: #ededf2 ; 
+    height: 100%;
 }
 
 nav .page-link:hover{
@@ -87,6 +96,12 @@ nav .page-link:hover{
     font-weight: 800;
     padding: 1.5rem 1.5rem 1rem 1.5rem;
     font-size: 2rem;
+}
+
+.div-info{
+    background-color: #8ebdb6;
+    border-radius: 5%;
+    padding: 5rem;
 }
 
 .info-section{
@@ -98,17 +113,44 @@ nav .page-link:hover{
 .info-section h2{
     font-size: 2.5rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #063940;
 }
 
 .info-section p, ul li{
-    font-size: 1.3rem;
+    font-size: 2rem;
+    /* color: #f6f6f6;
+    text-shadow: 4px 4px 3px #172c3c; */
+}
+
+#quotes .quote{
+    font-style: italic;
+}
+
+#quotes .fuente{
+    text-align: right;
+}
+
+.imagenes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+    margin-left: 1.5rem;
+
 }
 
 .imagenes img{
-    display: block;
-    width: 13rem;
-    margin: 1.5rem auto;
+    border: 2px dotted #063940;
+    width: 22rem;
+    margin: 1rem auto;
+    box-shadow: -5px 5px 7px #063940;
 
+}
+
+.row-footer{
+    background-color: #3e838c;
 }
 
 .footer{
@@ -117,6 +159,7 @@ nav .page-link:hover{
 
 .footer i{
     font-size: 4rem;
+    color: whitesmoke;
     
 }
 
@@ -134,6 +177,7 @@ nav .page-link:hover{
     font-size: 2.5rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
+    color: whitesmoke;
 
 }
 
@@ -151,6 +195,21 @@ nav .page-link:hover{
 
 @media only screen and (max-width: 575px) {
     
+    .imagenes img{
+        width: 11rem;
+    }
+    
+    body{
+        background-image: url(/img/background-2.jpg);
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .div-info{
+
+        padding: 0.5rem;
+    }
+
     .footer p, .footer a{
         /* position: absolute; */
         display: block;
@@ -188,7 +247,15 @@ nav .page-link:hover{
 
 @media only screen and (min-width:576px) {
 
+    .imagenes img{
+        width: 16rem;
+    }
 
+     body{
+        background-image: url(/img/background-2.jpg);
+        background-size: contain;
+        background-repeat: repeat;
+    }
 
     nav{
         width: 100%;
@@ -207,5 +274,9 @@ nav .page-link:hover{
 @media screen and (min-width:769px) {
     html{
         font-size: 10px;
+    }
+
+    .imagenes img{
+        width: 19rem;
     }
 }
